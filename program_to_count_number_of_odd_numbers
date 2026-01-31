@@ -1,0 +1,14 @@
+numbers = []
+
+while True:
+    s = int(input("Enter some numbers here: "))
+    if s == -1:
+        break
+    numbers.append(s)
+
+count = 0
+for n in numbers:
+    if n % 2 != 0:
+        count += 1
+
+print(count)
